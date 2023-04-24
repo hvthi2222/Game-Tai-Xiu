@@ -157,8 +157,7 @@ void taixiu(int *tk){
            
 }}}*/
     
-
-void rut(int *tk) {
+void showMenu(void){
     printf("*****************************************************\n");
     printf("* Chon ngan hang cua ban:                           *\n");
     printf("* 1.MB BANK                                         *\n");
@@ -168,6 +167,12 @@ void rut(int *tk) {
     printf("* 5.QUAY LAI                                        *\n");
     printf("*****************************************************\n");
     printf("NHAP LUA CHON: ");
+	
+	
+}
+
+void rut(int *tk) {
+    showMenu();
     int key3;
     char s[100];
     int stk;
@@ -219,15 +224,7 @@ void rut(int *tk) {
 }
 
 void nap(int *t, int *tk) {
-    printf("*****************************************************\n");
-    printf("* Chon ngan hang cua ban:                           *\n");
-    printf("* 1.MB BANK                                         *\n");
-    printf("* 2.VIETCOMBANK                                     *\n");
-    printf("* 3.TECHCOMBANK                                     *\n");
-    printf("* 4.TP BANK                                         *\n");
-    printf("* 5.QUAY LAI                                        *\n");
-    printf("*****************************************************\n");
-    printf("NHAP LUA CHON: ");
+    showMemu();
     int key;
     scanf("%d", &key);
     switch (key) {
